@@ -1,8 +1,4 @@
-# Public Documentation
-
-DePay has a strong, openly accessible documentation culture.
-
-While temporary colaboration, exchange, work on documents etc. is okay to happen elsewhere, decisions and all kinds of long-term documentation needs to be stored in here.
+# Technical Documentation
 
 ### Installation
 
