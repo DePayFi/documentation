@@ -28,15 +28,16 @@ Here’s how to do it:
 
 ![depay.com as Additional Domain](/img/examples/mini-app/additional-domain.png)
 
-4. Add `0xC9850b32475f4fdE5c972EA6f967982a3c435D10` under "Contract Entrypoints".
-
-![DePay contract entrypoint](/img/examples/mini-app/contract-entrypoint.png)
-
-5. Next, you'll need to add the token addresses for any tokens you want users to transact with. You can find a complete list of tokens deployed on World Chain [here](https://worldchain-mainnet.explorer.alchemy.com/tokens).
+4. Next, you'll need to add the token addresses for any tokens you want users to transact with. You can find a complete list of tokens deployed on World Chain [here](https://worldchain-mainnet.explorer.alchemy.com/tokens).
 
 ![Permit2 token configuration](/img/examples/mini-app/permit2-tokens.png)
 
 `0x79A02482A880bCE3F13e09Da970dC34db4CD24d1,0x2cFc85d8E48F8EAB294be644d9E25C3030863003` would allow `USDCe` and `WDL`.
+
+5. Add `0xC9850b32475f4fdE5c972EA6f967982a3c435D10` under "Contract Entrypoints".
+
+![DePay contract entrypoint](/img/examples/mini-app/contract-entrypoint.png)
+
 
 
 ### Integrate DePay
