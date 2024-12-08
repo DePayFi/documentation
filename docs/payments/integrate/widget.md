@@ -790,6 +790,12 @@ sequenceDiagram
   Widget->>App: release user
 ```
 
+:::caution
+
+Payment callbacks are assigned the highest priority in DePay's processing queue. Events such as attempt, processing, and succeeded/failed are processed independently. Consequently, a payment callback may arrive in a different order than the events you have already received. It is crucial to ensure your implementation avoids race conditions or dependencies on a specific sequence of events and payment callbacks, as their order is not guaranteed.
+
+:::
+
 ### Failed payment
 
 Only differs to a [successful payment](#successful-payment) in regards of the validation result and everything happening after.
