@@ -300,6 +300,24 @@ It will perform 25 retries over approx. 21 days.
 
 :::
 
+:::warning
+
+To ensure reliable integration with DePay, design your system to avoid race conditions that could arise from out-of-order events and callbacks.
+
+:::
+
+:::caution
+
+Payment callbacks are assigned the highest priority in DePay's processing queue. Events such as attempt, processing, and succeeded/failed are processed independently. Consequently, a payment callback may arrive in a different order than the events you have already received. It is crucial to ensure your implementation avoids race conditions or dependencies on a specific sequence of events and payment callbacks, as their order is not guaranteed.
+
+:::
+
+:::caution
+
+Payment events are processed independently, so their delivery order is not guaranteed. This behavior is particularly relevant when considering the retry mechanism: a single event may be re-delivered out of sequence if your backend fails to respond with a 200 status. For example, an "attempt" event might be requeued due to a failed delivery attempt, while a subsequent "processing" event is successfully delivered and processed first. The original "attempt" event may then arrive after the "processing" event.
+
+:::
+
 ## Verify communication
 
 Copy the public key provided for your integration (on [app.depay.com](https://app.depay.com)), store and use it in your application to verify all communication from DePay's APIs to your systems is authentic.
@@ -789,12 +807,6 @@ sequenceDiagram
   DePay->>Widget: release user
   Widget->>App: release user
 ```
-
-:::caution
-
-Payment callbacks are assigned the highest priority in DePay's processing queue. Events such as attempt, processing, and succeeded/failed are processed independently. Consequently, a payment callback may arrive in a different order than the events you have already received. It is crucial to ensure your implementation avoids race conditions or dependencies on a specific sequence of events and payment callbacks, as their order is not guaranteed.
-
-:::
 
 ### Failed payment
 
