@@ -79,7 +79,7 @@ DePay offers a variety of integration methods. Explore each option and choose th
         <img src="/docs/img/payments/button.png" />
       </div>
       <div className="pt-4">
-        <div><a href="/docs/payments/integrate/link"><h5 className="pb-1 mb-0">Button</h5></a></div>
+        <div><a href="/docs/payments/integrate/widget"><h5 className="pb-1 mb-0">Button</h5></a></div>
         <div className="pb-2"><small className="text-light">Embed simple HTML and enable one-click payments for your users.</small></div>
       </div>
     </a>
@@ -90,7 +90,7 @@ DePay offers a variety of integration methods. Explore each option and choose th
         <img src="/docs/img/payments/widget.png" />
       </div>
       <div className="pt-4">
-        <div><a href="/docs/payments/integrate/link"><h5 className="pb-1 mb-0">Widget</h5></a></div>
+        <div><a href="/docs/payments/integrate/widget"><h5 className="pb-1 mb-0">Widget</h5></a></div>
         <div className="pb-2"><small className="text-light">Embed payments and retain full control over the payment flow within your app.</small></div>
       </div>
     </a>
