@@ -94,7 +94,7 @@ const config = {
       prism: {
         theme: lightCodeTheme,
         darkTheme: darkCodeTheme,
-        additionalLanguages: ['ruby', 'php']
+        additionalLanguages: ['ruby', 'php', 'python', 'java']
       },
       image: 'https://depay.com/docs/img/seo/documentation.jpg'
     }),

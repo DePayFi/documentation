@@ -328,6 +328,46 @@ if(!verified){ throw('Request was not authentic!') }
 
 </TabItem>
 
+<TabItem value="java" label="Java" default>
+
+```java
+
+public static boolean verifySignature(String signature, String requestBody) throws Exception {
+    // Decode the Base64 signature
+    byte[] decodedSignature = Base64.getUrlDecoder().decode(signature);
+
+    // Convert PEM public key to PublicKey instance
+    String pemPublicKey = PUBLIC_KEY_STR
+            .replace("-----BEGIN PUBLIC KEY-----", "")
+            .replace("-----END PUBLIC KEY-----", "")
+            .replaceAll("\\s", "");
+    byte[] publicKeyBytes = Base64.getDecoder().decode(pemPublicKey);
+    X509EncodedKeySpec keySpec = new X509EncodedKeySpec(publicKeyBytes);
+    KeyFactory keyFactory = KeyFactory.getInstance("RSA");
+    PublicKey publicKey = keyFactory.generatePublic(keySpec);
+
+    // Initialize Signature with RSA-PSS
+    Signature rsaPssSignature = Signature.getInstance("RSASSA-PSS");
+    PSSParameterSpec pssParams = new PSSParameterSpec(
+            "SHA-256", 
+            "MGF1", 
+            MGF1ParameterSpec.SHA256, 
+            64, 
+            1
+    );
+    rsaPssSignature.setParameter(pssParams);
+    rsaPssSignature.initVerify(publicKey);
+
+    rsaPssSignature.update(requestBody.getBytes(StandardCharsets.UTF_8));
+
+    // Verify the signature
+    boolean isVerified = rsaPssSignature.verify(decodedSignature);
+    return isVerified;
+}
+```
+
+</TabItem>
+
 <TabItem value="ruby" label="Ruby" default>
 
 ```ruby
