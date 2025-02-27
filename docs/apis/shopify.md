@@ -1,24 +1,22 @@
 ---
 sidebar_position: 4
-sidebar_label: Payments
+sidebar_label: Shopify
 ---
 
-# Payments
+# Shopify Payments
 
-Access user's payment data.
+Access your own account's Shopify payment data.
 
-You app is required to have the [`payments.read`](/docs/apps/user-authentication#paymentsread) permission from the user's account.
-
-## Shopify Payments
-
-Allows apps to access users' Shopify payments with a Shopify payment `id`.
+:::info
+To access other account's Shopify payment data as an app, please [continue here](https://depay.com/docs/apps/apis/payments).
+:::
 
 :::info
 Only succeded payments are returned via this endpoint.
 :::
 
 ```apib
-### GET https://api.depay.com/apps/payments/shopify/{id}
+### GET https://api.depay.com/payments/shopify/{id}
 
 + Attributes
   
@@ -31,7 +29,6 @@ Only succeded payments are returned via this endpoint.
   + Headers
 
     x-api-key: {api_key}
-    Authorization: Bearer {access_token}
   
   + Body
   

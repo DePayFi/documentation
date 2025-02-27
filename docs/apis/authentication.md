@@ -14,18 +14,9 @@ In order to authenticate towards DePay's APIs, you need to pass your API Key via
 x-api-key: Th1406MN7L796p9fM8lHTa79jrtNorXW2duHYZkY
 ```
 
-## Test Key
-
-For testing purposes, DePay provides a public API key which is not recommended for any systems in production, as it's shared with the public and heavily rate-limited.
-We also rotate the public api key on a recurring basis.
-
-```
-Th1406MN7L796p9fM8lHTa79jrtNorXW2duHYZkY
-```
-
 ## Issue an API Key
 
-Once you're ready to move your integration to production, you will need to issue your own API key.
+If you want to use DePay's APIs, you need to issue your own API key.
 
 Go to **[DePay App](https://app.depay.com)** > **API** > **Issue Api Key**.
 
