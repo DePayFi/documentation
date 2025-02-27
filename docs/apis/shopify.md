@@ -8,7 +8,7 @@ sidebar_label: Shopify
 Access your own account's Shopify payment data.
 
 :::info
-To access other account's Shopify payment data as an app, please [continue here](https://depay.com/docs/apps/apis/payments).
+To access other account's Shopify payment data as an app, please [continue here](/docs/apps/apis/payments).
 :::
 
 :::info
