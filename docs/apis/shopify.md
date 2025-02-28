@@ -29,6 +29,8 @@ Only succeded payments are returned via this endpoint.
   + Headers
 
     x-api-key: {api_key}
+
++ Response 200 (application/json)
   
   + Body
   

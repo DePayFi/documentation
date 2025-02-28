@@ -16,15 +16,17 @@ Allows apps to access users' Shopify integrations and check which shops are conn
 ```apib
 ### GET https://api.depay.com/apps/integrations/shopify
 
-  + Request (application/json)
-  
++ Request (application/json)
+
   GET https://api.depay.com/apps/integrations/shopify
 
   + Headers
 
     x-api-key: {api_key}
     Authorization: Bearer {access_token}
-  
+
++ Response 200 (application/json)
+
   + Body
     
     [
