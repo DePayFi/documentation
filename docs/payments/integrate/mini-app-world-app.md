@@ -1,6 +1,6 @@
 ---
 sidebar_position: 4
-sidebar_label: Mini App & World App
+sidebar_label: Mini App (World App)
 title: Integrate DePay Payments into your Mini app built on World App.
 ---
 
