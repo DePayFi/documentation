@@ -147,6 +147,22 @@ let verified = await verify({
 
 if(!verified){ throw('Request was not authentic!') }
 ```
+:::info
+Always validate the unmodified raw request body. Many JavaScript frameworks automatically parse and alter the payload when using `req.body`, which can cause signature verification to fail. Ensure you access the raw, unprocessed data to guarantee accurate signature recovery:
+```javascript
+app.use(express.json({
+  verify: (req, res, buf, encoding) => {
+    req.rawBody = buf.toString(encoding);
+  }
+}));
+
+let verified = await verify({
+  signature: req.headers['x-signature'],
+  data: req.rawBody,
+  publicKey,
+});
+```
+:::
 
 </TabItem>
 
