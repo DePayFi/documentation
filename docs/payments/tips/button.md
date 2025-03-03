@@ -206,7 +206,7 @@ if(!verified){ throw('Request was not authentic!') }
 ```
 
 :::info
-Always validate the unmodified raw request body. Many JavaScript frameworks automatically parse and alter the payload when using `req.body`, which can cause signature verification to fail. Ensure you access the raw, unprocessed data to guarantee accurate signature recovery:
+Some JavaScript frameworks modify `req.body` by default, which can break signature verification. To ensure accuracy, use the raw, unprocessed request body.
 ```javascript
 app.use(express.json({
   verify: (req, res, buf, encoding) => {
