@@ -206,7 +206,7 @@ if(!verified){ throw('Request was not authentic!') }
 ```
 
 :::info
-Some JavaScript frameworks modify `req.body` by default, which can break signature verification. To ensure accuracy, use the raw, unprocessed request body.
+Some JavaScript frameworks modify `req.body` by default, which can break signature verification. If you encounter issues verifying the signature, try using the raw, unprocessed request body for verification:
 ```javascript
 app.use(express.json({
   verify: (req, res, buf, encoding) => {
