@@ -8,7 +8,7 @@ title: Integrate Web3 Payment Button
 
 Receive payments with the click of a button.
 
-DePay's Web3 Payment Button allows you to directly accept Web3 Payments without any required experience in JavaScript. Just use our button HTML to open a payment widget that uses your payment configuration.
+DePay's Web3 Payment Button allows you to directly accept Web3 Crypto Payments without any required experience in JavaScript. Just use our button HTML to open a payment widget that uses your payment configuration.
 
 ## Example
 

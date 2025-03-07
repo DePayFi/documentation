@@ -3,13 +3,13 @@ sidebar_position: 1
 sidebar_label: Payments
 ---
 
-# Wordpress Web3 Payments
+# Wordpress Web3 Crypto Payments
 
 Accept P2P Cryptocurrency Payments on your Wordpress website.
 
 Accept any token with on-the-fly conversion.
 
-![Wordpress Web3 Payments](/img/plugins/Wordpress-Web3-Payments.svg)
+![Wordpress Web3 Crypto Payments](/img/plugins/Wordpress-Web3-Payments.svg)
 
 ## Example
 
@@ -23,7 +23,7 @@ Login to your Wordpress Admin Dashboard.
 
 Within the Plugins section click "Add New".
 
-Search for "depay" and click "Install Now" on the "Web3 Payments plugin".
+Search for "depay" and click "Install Now" on the "Web3 Crypto Payments plugin".
 
 Make sure you click "Activate" after installation has been completed.
 

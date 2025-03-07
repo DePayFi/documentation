@@ -29,4 +29,4 @@ Integrate DePay once, and you'll support crypto payments across **10 blockchains
 ## Simple to Integrate
 
 DePay is designed for **effortless integration**.
-Simply insert a small code snippet into your project, and you're set to accept and execute **Web3 Payments**.
+Simply insert a small code snippet into your project, and you're set to accept and execute **Web3 Crypto Payments**.

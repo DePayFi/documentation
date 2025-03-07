@@ -4,13 +4,13 @@ sidebar_position: 1
 
 # Payment Screen
 
-Help users gain confidence in executing Web3 Payments by replacing cryptic confirmation screens with clear and intuitive payment interfaces.
+Help users gain confidence in executing Web3 Crypto Payments by replacing cryptic confirmation screens with clear and intuitive payment interfaces.
 
 ![Payment Verification](/img/wallets/payment-verification.png)
 
 ## Integrate
 
-You can use DePay's [verify-payment](https://github.com/DePayFi/verify-payment) Typescript/JavaScript library to decode Web3 Payments:
+You can use DePay's [verify-payment](https://github.com/DePayFi/verify-payment) Typescript/JavaScript library to decode Web3 Crypto Payments:
 
 <Tabs>
 

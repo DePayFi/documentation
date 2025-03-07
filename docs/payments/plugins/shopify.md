@@ -3,13 +3,13 @@ sidebar_position: 1
 sidebar_label: Shopify
 ---
 
-# Shopify Web3 Payments
+# Shopify Web3 Crypto Payments
 
 Start receiving payments directly into your wallet.
 
 Accept any token with on-the-fly conversion.
 
-![Shopify Web3 Payments](/img/plugins/Shopify-Web3-Payments.svg)
+![Shopify Web3 Crypto Payments](/img/plugins/Shopify-Web3-Payments.svg)
 
 [<FontAwesomeIcon icon="fa-brands fa-youtube" /> Watch the step-by-step video guide](https://depay.com/how-to/accept-web3-cryptocurrency-payments-on-shopify-4yObn75fWUVaxzBDbN8Dzd)
 

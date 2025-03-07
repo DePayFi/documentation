@@ -12,6 +12,6 @@ How wallets can improve payment experiences in Web3
 
 ## Payment Screen
 
-Replace cryptic confirmation screens with clear and intuitive payment interfaces to enhance user confidence in executing Web3 Payments.
+Replace cryptic confirmation screens with clear and intuitive payment interfaces to enhance user confidence in executing Web3 Crypto Payments.
 
 Learn [how to integrate a payment screen in a wallet](/docs/wallets/payment-screen).

@@ -11,7 +11,7 @@ const config = {
   ],
 
   title: 'DePay Documentation',
-  tagline: 'Learn how to integrate Web3 Payments by example.',
+  tagline: 'Learn how to integrate Web3 Crypto Payments by example.',
   url: 'https://depay.com',
   baseUrl: '/docs',
   onBrokenLinks: 'throw',

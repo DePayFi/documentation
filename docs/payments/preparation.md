@@ -4,7 +4,7 @@ sidebar_position: 4
 
 # Preparation
 
-Get ready to reveive Web3 Payments with DePay.
+Get ready to reveive Web3 Crypto Payments with DePay.
 
 ## Set up a wallet
 

@@ -1,10 +1,10 @@
 ---
 sidebar_position: 1
 sidebar_label: Overview
-title: Integrate Web3 Payments
+title: Integrate Web3 Crypto Payments
 ---
 
-# Web3 Payments
+# Web3 Crypto Payments
 
 Find the right way to integrate DePay.
 
@@ -53,7 +53,7 @@ Learn what blockchains, tokens, exchanges and wallets are supported by DePay.
 
 ## Preparation
 
-In order to receive Web3 Payments directly, you need to have a wallet and an address on each blockchain you want to support.
+In order to receive Web3 Crypto Payments directly, you need to have a wallet and an address on each blockchain you want to support.
 
 [Get ready to integrate DePay](/docs/payments/preparation)
 
@@ -113,7 +113,7 @@ Explore detailed integration examples that demonstrate how to incorporate DePay 
 
 ## Plugins
 
-DePay offers plugins for established platforms, allowing you to accept Web3 payments seamlessly without the need for intricate integration.
+DePay offers plugins for established platforms, allowing you to accept Web3 Crypto Payments seamlessly without the need for intricate integration.
 
 [See all DePay plugins](/docs/payments/plugins/)
 
