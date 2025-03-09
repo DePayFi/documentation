@@ -29,7 +29,7 @@ export default function Home() {
           <div className="row pb-5">
             
             <div className="col-12 col-md-6 pe-0 pe-md-4">
-              <h2 className="h3 pt-0">Web3 Payments</h2>
+              <h2 className="h3 pt-0">Web3 Crypto Payments</h2>
               <p className="lead">Offer seamless, blockchain-powered payment experiences to your users.</p>
               <div className="pt-2">
                 <a className="button btn btn-lg btn-primary mt-1" href="/docs/payments/">
