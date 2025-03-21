@@ -16,7 +16,7 @@ Only you have control over your funds at all times.
 DePay leverages **decentralized finance** (DeFi) for payment conversions when needed.
 This enables you to **accept thousands of tokens** and always receive your preferred ones.
 
-## "One-click" Payments
+## "One-click" Experience
 
 DePay directly connects to your user's wallet, scanning for available tokens across all blockchains.
 It then suggests the most **cost-efficient** payment option, providing a seamless **"One-click" Web3 Payment** solution.

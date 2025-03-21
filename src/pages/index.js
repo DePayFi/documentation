@@ -17,7 +17,7 @@ export default function Home() {
         <div className="container pt-4">
           
           <h1 className="hero__title">Documentation</h1>
-          <p className="hero__subtitle">Learn how to integrate DePay by example.</p>
+          <p className="hero__subtitle">Learn how to use and integrate DePay.</p>
 
         </div>
       </header>
@@ -40,9 +40,36 @@ export default function Home() {
             </div>
 
             <div className="col-12 col-md-6 pt-5 pt-md-0">
-              <img className="frontpage-web3-payments-image" src="/docs/img/web3-payments.svg"/>
+              <a href="/docs/payments/">
+                <img className="frontpage-web3-payments-image" src="/docs/img/web3-payments.svg"/>
+              </a>
             </div>
           </div>
+
+          <hr/>
+
+          <div className="row pb-3 pt-5">
+            
+            <div className="col-12 col-md-6 pe-0 pe-md-4">
+              <h2 className="h3 pt-0">Web3 Crypto Checkouts</h2>
+              <p className="lead">Sell and get paid seamlessly with crypto and digital wallets.</p>
+              <div className="pt-2">
+                <a className="button btn btn-lg btn-primary mt-1" href="/docs/checkouts/">
+                  Get started
+                  <FontAwesomeIcon icon={ faArrowRightLong } className="ms-2" />
+                </a>
+              </div>
+            </div>
+
+            <div className="col-12 col-md-6 pt-5 pt-md-0">
+              <a href="/docs/checkouts/">
+                <img className="frontpage-web3-checkout-image" src="/docs/img/web3-checkout.png"/>
+              </a>
+            </div>
+
+          </div>
+
+          <hr/>
 
           <div className="pt-5 pb-4 px-2 px-md-0">
             <h3 className="h4 pt-5 pt-md-0">Benefits</h3>
@@ -67,8 +94,8 @@ export default function Home() {
               <div className="col-12 ps-0 pe-0 col-md-4 pe-md-4">
                 <a href="/docs/payments/benefits#one-click-payments" className="d-block hover-card p-3">
                   <span className="d-block"><FontAwesomeIcon icon={ faWandMagicSparkles } className="text-body-color h2 pt-2" /></span>
-                  <h4 className="d-block h5 mb-1">"One-click" Payments</h4>
-                  <p className="d-block text-light pt-1 mb-0">DePay automagically suggests the most cost-efficient payment to users.</p>
+                  <h4 className="d-block h5 mb-1">"One-click" Experience</h4>
+                  <p className="d-block text-light pt-1 mb-0">DePay automatically suggests the most cost-efficient payment to users.</p>
                 </a>
               </div>
             </div>
@@ -113,10 +140,10 @@ export default function Home() {
 
             <div className="col-12 col-md-6">
             
-              <h3 className="h4 pt-3 pb-3">Plugins</h3>
+              <h3 className="h4 pt-3 pb-3">Checkouts</h3>
               
               <div className="pb-1">
-                <a href="/docs/payments/plugins/shopify" className="d-flex hover-card p-3">
+                <a href="/docs/checkouts/shopify" className="d-flex hover-card p-3">
                   <img style={{ width: '2.4rem', height: '2.4rem', position: 'relative', top: '0.2rem' }} src="/docs/img/plugins/Shopify.svg"/>
                   <div className="ps-3">
                     <div className="text-light"><strong>Shopify</strong></div>
@@ -126,7 +153,7 @@ export default function Home() {
               </div>
 
               <div className="pb-1">
-                <a href="/docs/payments/plugins/woocommerce" className="d-flex hover-card p-3">
+                <a href="/docs/checkouts/woocommerce" className="d-flex hover-card p-3">
                   <img style={{ width: '2.4rem', height: '2.4rem', position: 'relative', top: '0.2rem' }} src="/docs/img/plugins/WooCommerce.svg"/>
                   <div className="ps-3">
                     <div className="text-light"><strong>WooCommerce</strong></div>

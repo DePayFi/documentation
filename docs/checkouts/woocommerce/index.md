@@ -1,15 +1,15 @@
 ---
 sidebar_position: 2
 sidebar_label: WooCommerce
+redirect_from:
+  - /docs/payments/plugins/woocommerce
 ---
 
-# WooCommerce Web3 Crypto Payments
+# WooCommerce Web3 Crypto Checkout
 
-Start receiving payments directly into your wallet.
+Sell and get paid seamlessly with crypto and digital wallets.
 
-Accept any token with on-the-fly conversion.
-
-![WooCommerce Web3 Crypto Payments](/img/plugins/WooCommerce-Web3-Payments.svg)
+![WooCommerce Web3 Crypto Checkout](/img/checkouts/woocommerce-depay-checkout.jpg)
 
 [<FontAwesomeIcon icon="fa-brands fa-youtube" /> Watch the step-by-step video guide](https://depay.com/how-to/accept-web3-cryptocurrency-payments-on-woocommerce-4tbR4B1bdmipZ5a2N1e8HJ)
 

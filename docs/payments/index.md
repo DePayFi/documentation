@@ -38,7 +38,7 @@ There are plenty of benefits using DePay over other providers:
       <span className="d-block">
         <FontAwesomeIcon icon="fa-solid fa-wand-magic-sparkles" className="text-body-color h2 pt-2" />
       </span>
-      <h4 className="d-block h5 mb-1">"One-click" Payments</h4>
+      <h4 className="d-block h5 mb-1">"One-click" Experience</h4>
     </a>
   </div>
 </div>

@@ -47,8 +47,8 @@ Afterwards you can integrate and use DePay within your Mini App:
 
 - [Integrate a managed widget integration](/docs/payments/integrate/widget)
 
-- [Use DePay for Shopify](/docs/payments/plugins/shopify)
+- [Use DePay for Shopify](/docs/checkouts/shopify)
 
-- [Use DePay for WooCommerce](/docs/payments/plugins/woocommerce)
+- [Use DePay for WooCommerce](/docs/checkouts/woocommerce)
 
 - [Use DePay for WordPress](/docs/payments/plugins/wordpress/)
