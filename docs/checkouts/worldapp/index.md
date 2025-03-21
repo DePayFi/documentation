@@ -120,6 +120,8 @@ Now navigate to "Advanced":
 
 Then set "Additional Domains" to: `https://depay.com`
 
+![Additional Domains](/img/checkouts/worldapp/additional-domains.jpg)
+
 ### Permitted Tokens
 
 Now configure the tokens that you allow customers to use.
