@@ -8,6 +8,17 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 const config = {
   plugins: [
     'docusaurus-plugin-sass',
+    [
+      '@docusaurus/plugin-client-redirects',
+      {
+        redirects: [
+          { from: '/payments/plugins/shopify', to: '/checkouts/shopify/' },
+          { from: '/payments/plugins/shopify/', to: '/checkouts/shopify/' },
+          { from: '/payments/plugins/woocommerce', to: '/checkouts/woocommerce/' },
+          { from: '/payments/plugins/woocommerce/', to: '/checkouts/woocommerce/' },
+        ],
+      },
+    ],
   ],
 
   title: 'DePay Documentation',
