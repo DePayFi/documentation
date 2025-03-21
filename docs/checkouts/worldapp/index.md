@@ -151,6 +151,6 @@ Now check "Allow App Store Listing" and enter "Changelog":
 Finally click "Submit app" to submit it.
 
 :::success Succesfully submitted
-Your shop has been successfully submitted as a World App MiniApp.
+Your shop has been successfully submitted to World App.
 :::
 
