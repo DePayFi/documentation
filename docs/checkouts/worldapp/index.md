@@ -22,6 +22,18 @@ Make sure you have an online shop and that DePay is installed or integrated into
 - [Integrate DePay Payments](/docs/payments/integrate)
 - [Use DePay Payment Links](/docs/payments/integrate/link)
 
+### Accept tokens on World Chain
+
+To get your shop listed as a MiniApp on World App, make sure you accept tokens on World Chain.
+
+Select at least one World Chain token in your DePay payment configuration:
+
+![Select Token](/img/checkouts/worldapp/select-token.jpg)
+
+:::warning
+If you don’t add at least one World Chain token as an accepted payment method in you DePay configuration, payments in your Shop on World App won’t work.
+:::
+
 ## Step-by-step
 
 ### Create a World Account

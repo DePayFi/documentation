@@ -12,8 +12,10 @@ const config = {
       '@docusaurus/plugin-client-redirects',
       {
         redirects: [
-          { from: '/docs/payments/plugins/shopify', to: '/docs/checkouts/shopify' },
-          { from: '/docs/payments/plugins/woocommerce', to: '/docs/checkouts/woocommerce' },
+          { from: '/docs/payments/plugins/shopify', to: '/docs/checkouts/shopify/' },
+          { from: '/docs/payments/plugins/shopify/', to: '/docs/checkouts/shopify/' },
+          { from: '/docs/payments/plugins/woocommerce', to: '/docs/checkouts/woocommerce/' },
+          { from: '/docs/payments/plugins/woocommerce/', to: '/docs/checkouts/woocommerce/' },
         ],
       },
     ],
