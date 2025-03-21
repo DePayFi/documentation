@@ -34,10 +34,9 @@ Here’s how to do it:
 
 `0x79A02482A880bCE3F13e09Da970dC34db4CD24d1,0x2cFc85d8E48F8EAB294be644d9E25C3030863003` would allow `USDCe` and `WDL`.
 
-5. Add `0xC9850b32475f4fdE5c972EA6f967982a3c435D10,0x0Dfb7137bC64b63F7a0de7Cb9CDa178702666220` under "Contract Entrypoints".
+5. Add `0xC9850b32475f4fdE5c972EA6f967982a3c435D10,0x886eb82a7e5E7310F66A0E83748662A17E391eb0` under "Contract Entrypoints".
 
 ![DePay contract entrypoint](/img/examples/mini-app/contract-entrypoint.png)
-
 
 
 ### Integrate DePay
