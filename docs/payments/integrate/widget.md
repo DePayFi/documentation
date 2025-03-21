@@ -815,6 +815,12 @@ In contrast, payments valued at USD $1,000 or above receive the "finalized" stat
 
 For an in-depth overview, explore the [extended validation section](/docs/payments/validation#extended-validation).
 
+## Testing & Test Environments
+
+Only real blockchain transactions can be used for testing—otherwise, nothing is truly validated. Unlike traditional intermediaries, DePay can not simulate transactions, as it operates directly on the blockchain.
+
+We recommend testing with small amounts (even as low as 1 cent or lower) on low-fee blockchain networks for testing purposes.
+
 ## Payment flow
 
 ### Successful payment
