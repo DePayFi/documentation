@@ -118,7 +118,7 @@ Now navigate to "Advanced":
 
 ![Advanced](/img/checkouts/worldapp/advanced.jpg)
 
-Then set "Additional Domains" to: `https://integrate.depay.com,https://checkout.depay.com`
+Then set "Additional Domains" to: `https://integrate.depay.com,https://checkout.depay.com,https://link.depay.com`
 
 ### Permitted Tokens
 
