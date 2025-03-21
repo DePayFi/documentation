@@ -2,7 +2,7 @@
 sidebar_position: 1
 sidebar_label: Shopify
 redirect_from:
-  - /docs/payments/plugins/shopify
+  - /payments/plugins/shopify
 ---
 
 # Shopify Web3 Crypto Checkout

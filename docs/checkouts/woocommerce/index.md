@@ -2,7 +2,7 @@
 sidebar_position: 2
 sidebar_label: WooCommerce
 redirect_from:
-  - /docs/payments/plugins/woocommerce
+  - /payments/plugins/woocommerce
 ---
 
 # WooCommerce Web3 Crypto Checkout
