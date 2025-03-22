@@ -15,7 +15,7 @@ https://world.org/ecosystem/app_e40049a2b0b344c63754a954b84308df
 
 ## Before you start
 
-Make sure you have an online shop and that DePay is installed or integrated into it—whether you're using Shopify, WooCommerce, or any other platform supported by DePay Checkout or integration:
+Make sure you have an online shop and that DePay is installed or integrated into it—whether you're using Shopify, WooCommerce, or any other platform supported by DePay:
 
 - [Setup DePay for Shopify](/docs/checkouts/shopify)
 - [Setup DePay for WooCommerce](/docs/checkouts/woocommerce)
