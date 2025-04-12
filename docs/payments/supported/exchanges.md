@@ -28,7 +28,7 @@ The following decentralized exchanges are currently supported by DePay.
       </div>
       <div className="ps-3">
         <div className="text-light"><strong>Uniswap v2</strong></div>
-        <div className="text-light">Ethereum</div>
+        <div className="text-light">Ethereum, Base</div>
       </div>
     </div>
   </div>
