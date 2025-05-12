@@ -53,17 +53,6 @@ The following blockchains are currently supported by DePay.
   </div>
 
   <div className="col-12 col-md-6">
-    <a href="#fantom" className="d-flex hover-card p-3 align-items-center">
-      <div className="text-center position-relative pe-2" style={{width: "2.3rem"}}>
-        <img style={{ width: '1.8rem', height: '1.8rem', position: 'relative', top: '0.1rem' }} src="/docs/img/blockchains/Fantom.svg"/>
-      </div>
-      <div className="ps-3 pt-1">
-        <div className="text-light"><strong>Fantom</strong></div>
-      </div>
-    </a>
-  </div>
-
-  <div className="col-12 col-md-6">
     <a href="#avalanche" className="d-flex hover-card p-3 align-items-center">
       <div className="text-center position-relative pe-2" style={{width: "2.3rem"}}>
         <img style={{ width: '1.8rem', height: '1.8rem', position: 'relative', top: '0.1rem' }} src="/docs/img/blockchains/Avalanche.svg"/>
