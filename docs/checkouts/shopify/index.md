@@ -161,3 +161,41 @@ To enable test mode, go to your Shopify admin at https://admin.shopify.com, then
 :::info
 When test mode is enabled, no actual transactions are carried out. However, you can still test the wallet connection and explore the payment suggestion process.
 :::
+
+## Process Refunds
+
+When processing refunds for Shopify orders paid with crypto via DePay, please follow these steps:
+
+**1. Refund the crypto amount to the customer**
+
+![Refund crypto payment](/img/checkouts/shopify/refund-crypto-payment.jpg)
+
+:::info
+Due to DePay's non-custodial nature, the crypto payment was sent directly to your wallet. Therefore, you must manually execute the refund from your wallet back to the customer.
+:::
+
+**2. Identify the Shopify Order**
+
+Open your Shopify Admin Dashboard ("Orders"), locate, and open the order that requires a refund.
+
+![Identify order](/img/checkouts/shopify/shopify-identify-order.jpg)
+
+**3. Cancel the Order in Shopify**
+
+![Initiate refund crypto payment](/img/checkouts/shopify/shopify-initiate-process-refund.jpg)
+
+Click "More Actions" and select "Cancel Order".
+
+Choose the reason "Customer changed or canceled order".
+
+Paste a link to the crypto refund transaction into the "Staff note" field for reference.
+
+**4. Confirm Cancellation**
+
+![Confirm refund crypto payment](/img/checkouts/shopify/shopify-confirm-process-refund.jpg)
+
+Click "Cancel order" to finalize the cancellation process.
+
+:::info
+Payment gateway fees incurred during the original transaction cannot be refunded, even if the order is canceled.
+:::
