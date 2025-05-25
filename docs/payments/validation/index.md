@@ -29,12 +29,12 @@ Different blockchains have varying benchmarks for what constitutes a "finalized"
 | Blockchain | Blocks | Seconds |
 |------------|--------|---------|
 | Ethereum   | 12     | 144s    |
-| BSC        | 15     | 45s     |
-| Polygon    | 50     | 100s    |
-| Solana     | 16     | 1s      |
-| Fantom     | 5      | 10s     |
+| BSC        | 3      | 8s      |
+| Polygon    | 16     | 34s     |
+| Solana     | 16     | 2s      |
 | Avalanche  | 2      | 2s      |
 | Gnosis     | 60     | 300s    |
 | Arbitrum   | 120    | 34s     |
 | Optimism   | 100    | 40s     |
 | Base       | 100    | 40s     |
+| Worldchain | 100    | 40s     |

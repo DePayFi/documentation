@@ -161,12 +161,6 @@ Payments on Polygon typically take **5 seconds** in average to process and valid
 
 A payment transaction on Polygon costs users approx. **below $0.01** in average.
 
-## Fantom
-
-Payments on Fantom typically take **40 seconds** in average to process and validate.
-
-A payment transaction on Fantom costs users approx. **below $0.01** in average.
-
 ## Avalanche
 
 Payments on Arbitrum typically take **4 seconds** in average to process and validate.
