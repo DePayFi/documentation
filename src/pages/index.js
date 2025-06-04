@@ -611,15 +611,6 @@ export default function Home() {
 
               <div className="pb-1 pt-1">
                 <div className="d-flex p-2 text-decoration-none">
-                  <img style={{ width: '1rem', height: '1rem', position: 'relative', top: '0.2rem' }} src="/docs/img/blockchains/Fantom.svg"/>
-                  <div className="ps-3">
-                    <div className="text-light"><strong>Fantom</strong></div>
-                  </div>
-                </div>
-              </div>
-
-              <div className="pb-1 pt-1">
-                <div className="d-flex p-2 text-decoration-none">
                   <img style={{ width: '1rem', height: '1rem', position: 'relative', top: '0.2rem' }} src="/docs/img/blockchains/Gnosis.svg"/>
                   <div className="ps-3">
                     <div className="text-light"><strong>Gnosis</strong></div>

@@ -93,16 +93,4 @@ The following decentralized exchanges are currently supported by DePay.
     </div>
   </div>
 
-  <div className="pb-1 pt-4">
-    <div className="d-flex">
-      <div className="text-center position-relative pe-2" style={{width: "2.3rem"}}>
-        <img style={{ width: '1.8rem', height: '1.8rem', position: 'relative', top: '0.1rem' }} src="/docs/img/exchanges/spookyswap.svg"/>
-      </div>
-      <div className="ps-3">
-        <div className="text-light"><strong>Spookyswap</strong></div>
-        <div className="text-light">Fantom</div>
-      </div>
-    </div>
-  </div>
-
 </div>

@@ -15,7 +15,7 @@ DePay's Web3 Payment Button allows you to directly accept Web3 Crypto Payments w
 <div className="py-5">
   <DePayButton
     label={'Pay'}
-    blockchains='["ethereum","bsc","polygon","solana","gnosis","fantom","avalanche","arbitrum","optimism","base"]'
+    blockchains='["ethereum","bsc","polygon","solana","gnosis","avalanche","arbitrum","optimism","base"]'
     configuration={ {"accept":[{"blockchain":"ethereum","amount":1,"token":"0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48","receiver":"0x4e260bB2b25EC6F3A59B478fCDe5eD5B8D783B02"},{"blockchain":"bsc","amount":1,"token":"0x8ac76a51cc950d9822d68b83fe1ad97b32cd580d","receiver":"0x4e260bB2b25EC6F3A59B478fCDe5eD5B8D783B02"},{"blockchain":"polygon","amount":1,"token":"0x2791bca1f2de4661ed88a30c99a7a9449aa84174","receiver":"0x4e260bB2b25EC6F3A59B478fCDe5eD5B8D783B02"},{"blockchain":"solana","amount":1,"token":"EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v","receiver":"B2mgZ4ddUcu7bimLThBahpizPysVJ7xTd2woScmWtPYr"},{"blockchain":"gnosis","amount":1,"token":"0xEeeeeEeeeEeEeeEeEeEeeEEEeeeeEeeeeeeeEEeE","receiver":"0x4e260bB2b25EC6F3A59B478fCDe5eD5B8D783B02"},{"blockchain":"fantom","amount":1,"token":"0x28a92dde19D9989F39A49905d7C9C2FAc7799bDf","receiver":"0x4e260bB2b25EC6F3A59B478fCDe5eD5B8D783B02"},{"blockchain":"avalanche","amount":1,"token":"0x9702230A8Ea53601f5cD2dc00fDBc13d4dF4A8c7","receiver":"0x4e260bB2b25EC6F3A59B478fCDe5eD5B8D783B02"},{"blockchain":"arbitrum","amount":1,"token":"0xaf88d065e77c8cC2239327C5EDb3A432268e5831","receiver":"0x4e260bB2b25EC6F3A59B478fCDe5eD5B8D783B02"},{"blockchain":"optimism","amount":1,"token":"0x94b008aA00579c1307B0EF2c499aD98a8ce58e58","receiver":"0x4e260bB2b25EC6F3A59B478fCDe5eD5B8D783B02"},{"blockchain":"base","amount":1,"token":"0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913","receiver":"0x4e260bB2b25EC6F3A59B478fCDe5eD5B8D783B02"}]} }
   />
 </div>
@@ -25,7 +25,7 @@ DePay's Web3 Payment Button allows you to directly accept Web3 Crypto Payments w
   class="DePayButton"
   label="Pay"
   integration="1f517a0d-5bf3-4095-a096-c6b11d8e4d91"
-  blockchains='["ethereum","bsc","polygon","solana","gnosis","fantom","avalanche","arbitrum","optimism","base"]'
+  blockchains='["ethereum","bsc","polygon","solana","gnosis","avalanche","arbitrum","optimism","base"]'
 ></div>
 <script src="https://integrate.depay.com/buttons/v12.js"></script>
 <noscript><a href="https://depay.com">Web3 Payments</a> are only supported with JavaScript enabled.</noscript>

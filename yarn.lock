@@ -1455,10 +1455,10 @@
   dependencies:
     bs58 "^5.0.0"
 
-"@depay/verify-payment@^1.3.1":
-  version "1.3.1"
-  resolved "https://registry.yarnpkg.com/@depay/verify-payment/-/verify-payment-1.3.1.tgz#58608ecc5ac342aa17eb4a60c60eb8e8983df010"
-  integrity sha512-2NvSoGmTHauWNI7gpHb6LsEw2qZEF1QXCdlfum87Ri4qUVCRouALQ4vNCtQwJu1Xkh85HVS+RSv3RzvFiyWTEw==
+"@depay/verify-payment@^2.0.0":
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/@depay/verify-payment/-/verify-payment-2.0.0.tgz#4453176aed5536a749dcc5f34858caa4a80ecd9f"
+  integrity sha512-m+Q1p0nI/Yn5kPom1OScBWOISyjlYk774Pzq+JEfX9Se6EfhHKT8yn4pdedLfKDHOGKvwwDeGioQ3oXXC+FzzQ==
 
 "@depay/walletconnect-v1@^1.8.0":
   version "1.8.0"

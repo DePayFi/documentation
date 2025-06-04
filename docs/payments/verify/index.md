@@ -54,51 +54,62 @@ If your wallet provides you with the `HEX` calldata prepared to call the DePay p
 
 Some wallets that support transaction decoding will be able to display the payment details in a more human readable way:
 
-```
+```javascript
 [
-  10000,
-  false,
-  9850,
-  150,
-  "0x2791Bca1f2de4661ED88A30C99A7a9449Aa84174",
-  "0x0000000000000000000000000000000000000000",
-  "0x2791Bca1f2de4661ED88A30C99A7a9449Aa84174",
-  "0x317D875cA3B9f8d14f960486C0d1D1913be74e90",
-  "0x7b94266CA5cC36005b3043e1ffE5EBd624494731",
-  0,
-  0,
-  "0000000000000000000000000000000000000000",
-  "0000000000000000000000000000000000000000",
-  1693573293
+  105000000000000000,   // amount paid in
+  24034,                // payment amount paid to payment receiver
+  0,                    // fee amount paid to fee receiver
+  0,                    // fee amount paid to secondary fee receiver
+  0,                    // fee amount paid to protocol
+  1748277017920,        // deadline (after which the payment will revery)
+  "0xEeeeeEeeeEeEeeEeEeEeeEEEeeeeEeeeeeeeEEeE",   // token address of the input token
+  "0x68b3465833fb72A70ecDF485E0e4C7bD8665Fc45",   // address of the used exchange (for conversion)
+  "0x3c499c542cEF5E3811e1192ce70d8cC03d5c3359",   // token address of the output token
+  "0x08B277154218CCF3380CAE48d630DA13462E3950",   // address of the payment receiver
+  "0x0000000000000000000000000000000000000000",   // address of the fee receiver
+  "0x0000000000000000000000000000000000000000",   // address of the secondary fee receiver
+  1,      // exchange type
+  0,      // receiver type
+  false,  // permit2
+  // following the auto conversion data
+  "0xac9650d800000000000000000000000000000000000000000000000000000000000000200000000000000000000000000000000000000000000000000000000000000003000000000000000000000000000000000000000000000000000000000000006000000000000000000000000000000000000000000000000000000000000000c0000000000000000000000000000000000000000000000000000000000000020000000000000000000000000000000000000000000000000000000000000000241c58db4f00000000000000000000000000000000000000000000000001732c47109514d0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000104b858183f00000000000000000000000000000000000000000000000000000000000000200000000000000000000000000000000000000000000000000000000000000080000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000005f50000000000000000000000000000000000000000000000000000000000000002b0d500b1d8e8ef31e21c99d1db9a6444d3adf12700001f43c499c542cef5e3811e1192ce70d8cc03d5c335900000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000412210e8a00000000000000000000000000000000000000000000000000000000",
+  // following the receiver call data
+  "0x0000000000000000000000000000000000000000"
 ]
 ```
 
 Those parameters have the following meaning, from the top to bottom:
 
-**#1** is the amount paid. In our example `10000`. If the paid in token has e.g. 6 decimals, like in this example, this means you will pay in 0.01.
+**#1** is the amount paid. In our example `105000000000000000`.
 
-**#2** indicates whether the payment utilizes Permit2 (a standard for granting token usage approvals to smart contracts) or not. If set to false, tokens will be transferred based on prior token approvals, which are granted in a distinct, dedicated transaction.
+**#2** specifies the amount that will be disbursed to the payment receiver.
 
-**#3** specifies the amount that will be disbursed to the payment receiver. If the payout token, for instance, has 6 decimals, as in this example, it means 0.00985 of the payout token will be transferred to the payment recipient.
+**#3** specifies the amount that will be disbursed to the fee receiver.
 
-**#4** specifies the amount that will be disbursed to the fee receiver. If the payout token, for instance, has 6 decimals, as in this example, it means 0.00015 of the payout token will be transferred to the payment recipient.
+**#4** specifies the amount that will be disbursed to the secondary fee receiver.
 
-**#5** represents the address of the token being paid with. This specific token will be deducted from your wallet to complete this payment.
+**#5** specifies the amount that will be disbursed to the protocol (fee).
 
-**#6** represents the address of the exchange used to perform a conversion as part of the payment. If this is set to `0x0000000000000000000000000000000000000000` no conversion will be performed.
+**#6** defines the timestamp after which the payment will be dropped by the payment protocol.
 
-**#7** represents the address of the token used as payout. The payment and fee receiver will receive this token as part of this payment.
+**#7** represents the address of the token used as input.
 
-**#8** represents the address of the payment receiver. This address will receive the amount specified in line #3.
+**#8** represents the address of the exchange used to perform a conversion as part of the payment. If this is set to `0x0000000000000000000000000000000000000000` no conversion will be performed.
 
-**#9** represents the address of the fee receiver. This address will receive the amount specified in line #4.
+**#9** represents the address of the token used as payout. The payment and fee receivers will receive this token as part of this payment.
 
-**#10** defines the type of how to convert tokens with the exchange defined in line #6.
+**#10** represents the address of the payment receiver.
 
-**#11** defines the type of how to forwarded payments to a smart contract receiver if payment receiver in line #3 is a smart contract.
+**#11** represents the address of the fee receiver.
 
-**#12** defines the data used to execute the conversion on the exchange defined in lien #6.
+**#12** represents the address of the secondary fee receiver.
 
-**#13** defines the data used to call the payment receiver if the receiver is a smart contract and supposed to be called.
+**#13** defines the type of how to convert tokens with the exchange.
 
-**#14** defines the timestamp after which the payment will be dropped by the payment protocol.
+**#14** defines the type of how to forwarded payments to a smart contract receiver if payment receiver is a smart contract.
+
+**#15** indicates whether the payment utilizes Permit2 (a standard for granting token usage approvals to smart contracts) or not. If set to false, tokens will be transferred based on prior token approvals, which are granted in a distinct, dedicated transaction.
+
+**#16** defines the data used to execute the conversion on the exchange.
+
+**#17** defines the data used to call the payment receiver if the receiver is a smart contract and supposed to be called.

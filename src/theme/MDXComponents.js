@@ -148,7 +148,8 @@ function PaymentDecoder() {
         <div>
           <select value={ blockchain } onChange={(event)=>setBlockchain(event.target.value)}>
             {
-              Blockchains.all.map((blockchain)=>{
+              ['ethereum','bsc','polygon','arbitrum','avalanche','gnosis','optimism','base'].map((blockchainName)=>{
+                let blockchain = Blockchains[blockchainName]
                 return(
                   <option key={blockchain.name} value={blockchain.name}>{ blockchain.label }</option>
                 )
