@@ -27,7 +27,7 @@ DePay's Web3 Payment Button allows you to directly accept Web3 Crypto Payments w
   integration="1f517a0d-5bf3-4095-a096-c6b11d8e4d91"
   blockchains='["ethereum","bsc","polygon","solana","gnosis","avalanche","arbitrum","optimism","base"]'
 ></div>
-<script src="https://integrate.depay.com/buttons/v12.js"></script>
+<script src="https://integrate.depay.com/buttons/v13.js"></script>
 <noscript><a href="https://depay.com">Web3 Payments</a> are only supported with JavaScript enabled.</noscript>
 <script>DePayButtons.init({document: document});</script>
 ```
@@ -87,7 +87,7 @@ Now you can place the integration code into your app and open the DePay Payment 
   integration="1f517a0d-5bf3-4095-a096-c6b11d8e4d91"
   blockchains='["ethereum","bsc"]'
 ></div>
-<script src="https://integrate.depay.com/buttons/v12.js"></script>
+<script src="https://integrate.depay.com/buttons/v13.js"></script>
 <noscript><a href="https://depay.com">Web3 Payments</a> are only supported with JavaScript enabled.</noscript>
 <script>DePayButtons.init({document: document});</script>
 ```
