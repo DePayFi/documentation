@@ -7,7 +7,7 @@ sidebar_label: Payments
 
 Access user's payment data.
 
-You app is required to have the [`payments.read`](/docs/apps/user-authentication#paymentsread) permission from the user's account.
+You app is required to have the [`payments.read`](/docs/apps/user-authorization#paymentsread) permission authorized from the user's account.
 
 ## Shopify Payments
 

@@ -16,7 +16,7 @@ Check [Basic API Authentication](/docs/apis/authentication).
 
 ## Access Token
 
-Make sure you have the [User Authentication Flow](/docs/apps/user-authentication) implemented and your app is able to [retrieve and refresh access tokens](/docs/apps/user-authentication#retrieve-access-token).
+Make sure you have the [User Authorization Flow](/docs/apps/user-authorization) implemented and your app is able to [retrieve and refresh access tokens](/docs/apps/user-authorization#retrieve-access-token).
 
 ## Authorization Header
 

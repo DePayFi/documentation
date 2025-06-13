@@ -7,7 +7,7 @@ sidebar_label: Integrations
 
 Access user's integrations.
 
-You app is required to have the [`integrations.read`](/docs/apps/user-authentication#integrationsread) permission from the user's account.
+You app is required to have the [`integrations.read`](/docs/apps/user-authorization#integrationsread) permission authorized from the user's account.
 
 ## Shopify
 
