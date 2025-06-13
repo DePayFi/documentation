@@ -1,12 +1,11 @@
 ---
 sidebar_position: 2
-sidebar_label: User Authentication
+sidebar_label: User Authorization
 ---
 
-# User Authentication
+# User Authorization
 
 Receive authorization from users by asking for the required permissions.
-
 
 ## Step by step
 
@@ -16,9 +15,9 @@ First you need to create an app on [app.depay.com](https://app.depay.com).
 
 Go to **Apps** > **New App** and provide all the information required.
 
-### Enable User Authentication
+### Enable User Authorization
 
-Right after creating your app or after navigating your app on [app.depay.com](https://app.depay.com) **Apps** > **Your App** click "**Enable**" within the "**User Authentication**" section.
+Right after creating your app or after navigating your app on [app.depay.com](https://app.depay.com) **Apps** > **Your App** click "**Enable**" within the "**User Authorization**" section.
 
 ### Required Permissions
 
@@ -36,13 +35,13 @@ Allows your app to access all integration data connected to the user's account.
 
 Now set the redirect URL where users should be send to after they have granted your app permissions.
 
-### Authentication URL
+### Authorization URL
 
-Make sure you copy the "**Authentication URL**".
+Make sure you copy the "**Authorization URL**".
 
-This is the URL you need to send users to in order to start a user authentication flow.
+This is the URL you need to send users to in order to start a user authorization flow.
 
-### Prepare User Authentication
+### Prepare User Authorization
 
 Right before sending users to DePay to grant your app an authorization, create a random 32 bytes value called `code_verifier` and persist it as part of the authorization attempt.
 
@@ -99,7 +98,7 @@ Retrieves latest access_token.
 
 This can only be done once for a single `authorization_code` as a given `authorization_code` will be invalidated once used.
 
-You will need to restart the authentication flow if a `authorization_code` has been invalidated.
+You will need to restart the authorization flow if a `authorization_code` has been invalidated.
 
 ### Refresh Access Token
 
@@ -150,4 +149,4 @@ Retrieves latest access_token.
 
 This can only be done once for a single `refresh_token`.
 
-You will need to restart the authentication flow if a `refresh_token` has been invalidated and you didn't manage to persist the next `refresh_token`.
+You will need to restart the authorization flow if a `refresh_token` has been invalidated and you didn't manage to persist the next `refresh_token`.

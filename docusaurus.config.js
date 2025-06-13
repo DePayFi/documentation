@@ -14,6 +14,7 @@ const config = {
         redirects: [
           { from: '/payments/plugins/shopify', to: '/checkouts/shopify/' },
           { from: '/payments/plugins/woocommerce', to: '/checkouts/woocommerce/' },
+          { from: '/apps/user-authentication', to: '/apps/user-authorization/' },
         ],
       },
     ],
