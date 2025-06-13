@@ -3,9 +3,9 @@ sidebar_position: 1
 sidebar_label: Overview
 ---
 
-# DePay Apps
+# Apps
 
-Access data and perform actions on user's behalf.
+Enable your application to securely access DePay user data and act on behalf of users with their consent.
 
 ![DePay Apps](/img/apps/apps.svg)
 
