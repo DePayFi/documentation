@@ -14,6 +14,12 @@ Make sure you have an Api Key before accessing DePay APIs.
 
 Check [Basic API Authentication](/docs/apis/authentication).
 
+In order to authenticate towards DePay's APIs, you need to pass your API Key via the `x-api-key` header:
+
+```
+x-api-key: Th1406MN7L796p9fM8lHTa79jrtNorXW2duHYZkY
+```
+
 ## Access Token
 
 Make sure you have the [User Authorization Flow](/docs/apps/user-authorization) implemented and your app is able to [retrieve and refresh access tokens](/docs/apps/user-authorization#retrieve-access-token).

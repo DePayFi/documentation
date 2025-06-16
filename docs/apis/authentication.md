@@ -8,7 +8,7 @@ In order to authenticate towards DePay's APIs you need an API key.
 
 ## Header
 
-In order to authenticate towards DePay's APIs, you need to pass your API Key via the `x-api-key header`:
+In order to authenticate towards DePay's APIs, you need to pass your API Key via the `x-api-key` header:
 
 ```
 x-api-key: Th1406MN7L796p9fM8lHTa79jrtNorXW2duHYZkY

@@ -7,29 +7,45 @@ sidebar_label: User Authorization
 
 Receive authorization from users by asking for the required permissions.
 
+:::info
+This is a fully compliant OAuth 2.0 Authorization Code flow implementation with PKCE.
+:::
+
+![App User Authorization](/img/apps/app-user-authorization.jpg)
+
 ## Step by step
 
 ### Create an App
 
 First you need to create an app on [app.depay.com](https://app.depay.com).
 
+![Create App](/img/apps/create-new-app.jpg)
+
 Go to **Apps** > **New App** and provide all the information required.
+
+![App Details](/img/apps/create-app-enter-details.jpg)
+
+### App ID & Secret
+
+Copy your **App ID** and your **App Secret** into your app.
+
+![App Dashboard](/img/apps/app-dashboard.jpg)
+
+:::warning
+Treat your App Secret like a password—store it securely on your back-end, never embed or expose it in any front-end code, and use it only for server-to-server token exchanges.
+:::
 
 ### Enable User Authorization
 
 Right after creating your app or after navigating your app on [app.depay.com](https://app.depay.com) **Apps** > **Your App** click "**Enable**" within the "**User Authorization**" section.
 
+![Enable User Authorization](/img/apps/user-authorization.jpg)
+
 ### Required Permissions
 
 Now select the permissions your app requires.
 
-#### payments.read
-
-Allows your app to access all payment data connected to the user's account.
-
-#### integrations.read
-
-Allows your app to access all integration data connected to the user's account.
+[**List of all app permissions and their detailed descriptions**](/docs/apps/permissions).
 
 ### Redirect URL
 
@@ -41,112 +57,209 @@ Make sure you copy the "**Authorization URL**".
 
 This is the URL you need to send users to in order to start a user authorization flow.
 
-### Prepare User Authorization
+### Initiate Authorization Request
 
-Right before sending users to DePay to grant your app an authorization, create a random 32 bytes value called `code_verifier` and persist it as part of the authorization attempt.
+Generate and store a high-entropy `code_verifier` (32+ random bytes, URL-safe):
 
-After you have stored your `code_verifier`, generate `code_challenge` as a BASE64URL-safe-encoded SHA-256 hash of `code_verifier` + `app_secret` (string concatenation).
-
-Attach `code_challenge` to the app authorization url: `https://app.depay.com/authorize/:app_id?code_challenge=<VALUE>`.
-
-### User Redirect
-
-Once the user granted authorization on the authorization page, the user will be sent to the configured `redirect_url` of the app.
-
-The redirect to the configured `redirect_url` will contain two additional parameters: `code_challenge` and `authorization_code`.
-
-When users return to your `redirect_url` you need to validate that the value for `code_challenge` is indeed the BASE64URL-safe-encoded SHA-256 hash of your stored `code_verifier` + `app_secret` (string concatenation).
-
-Use the `authorization_code` + `code_verifier` parameter to exchange it for an `access_token` before starting making requests to the API.
-
-### Retrieve Access Token
-
-The `access_token` needs to be present in order to perform API requests on behalf of the user.
-
-If your app has no `access_token` persisted for a given user it needs to retrieve the access_token for the given user by providing the `authorization_code` and `code_verifier`.
-
-A single `authorization_code` can only be used once to retrieve an `access_token`.
-
-```apib
-### POST https://api.depay.com/apps/access_token
-
-Retrieves latest access_token.
-
-+ Request (application/json)
-  
-  POST https://api.depay.com/apps/access_token
-
-  + Body
-  
-    {
-      "app_id": "<YOUR APP ID>",
-      "code_verifier": "<VALUE>",
-      "authorization_code": "<VALUE>"
-    }
-
-
-+ Response 200 (application/json)
-  
-  + Body
-  
-    {
-      "access_token": "332407c4-368a-42bc-bfd6-e6f5ca96d893",
-      "refresh_token": "123e5f13-406e-4c6a-ab21-c7e01d168f97",
-      "expires_at": "2022-11-10T14:30:00.436Z"
-    }
+```
+code_verifier         = BASE64URL( RANDOM_BYTES(32) )        # 43–128 characters
+code_challenge_method = S256
+code_challenge        = BASE64URL( SHA256(code_verifier) )
+state                 = BASE64URL( RANDOM_BYTES(16) )        # 22 characters
 ```
 
-This can only be done once for a single `authorization_code` as a given `authorization_code` will be invalidated once used.
+Redirect the user’s browser to DePay’s authorization endpoint:
 
-You will need to restart the authorization flow if a `authorization_code` has been invalidated.
+```
+GET https://app.depay.com/authorize
+  ?response_type=code
+  &client_id=<YOUR_APP_ID>
+  &code_challenge_method=S256
+  &code_challenge=${code_challenge}
+  &state=${state}
+```
 
-### Refresh Access Token
+:::warning
+To prevent open‐redirect attacks, all users will be redirected to the pre‐registered redirect URI configured in your app dashboard on app.depay.com.
+:::
 
-An `access_token` has an `expires_at` set. The `access_token` needs to be refreshed after it expired (e.g. `if expires_at > DateTime.now`).
+### Handle the Redirect
 
-The App API will start responding with the following once an `access_token` expired:
+After the user approves or denies, DePay will redirect to your redirect_uri with:
+
+- `code` — the authorization code (on success)
+
+- `state` — the same value you sent
+
+Example callback URL (on success):
+
+```
+https://yourapp.com/callback
+  ?code=SplxlOBeZQQYbYS6WxSbIA
+  &state=xyzABC123
+```
+
+Server-side must:
+
+- Verify state matches the one you stored.
+
+- Retrieve the original `code_verifier` for this attempt.
+
+### Exchange Authorization Code for Tokens
+
+:::warning
+Ensure all token exchanges occur via your backend directly to DePay APIs only.”
+:::
+
+From your server back-end only, make a POST to the token endpoint:
 
 ```apib
+### POST https://api.depay.com/oauth/token
 
++ Request (application/json)
+
+  {
+    "grant_type":    "authorization_code",
+    "client_id":     "<YOUR_APP_ID>",
+    "client_secret": "<YOUR_APP_SECRET>",
+    "code":          "<AUTHORIZATION_CODE>",
+    "redirect_uri":  "<YOUR_REDIRECT_URI>",
+    "code_verifier": "<ORIGINAL_CODE_VERIFIER>"
+  }
+
++ Response 200 (application/json)
+
+  {
+    "access_token":  "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9…",
+    "token_type":    "Bearer",
+    "expires_in":    3600,
+    "expires_at":    "2022-11-10T14:30:00.436Z",
+    "refresh_token": "def50200a45f…",
+    "scope":         "payments.read integrations.read"
+  }
+```
+
+:::info
+A given `authorization_code` can be exchanged only once.
+:::
+
+:::info
+Store `access_token`, `refresh_token` and store its expiry (`expires_at`).
+:::
+
+### Refresh an Access Token
+
+When your stored `access_token` expires or you receive a response with status code 401:
+
+```apib
 + Response 401 (application/json)
-  
-  + Body
-  
-    { "error_code": "ACCESS_TOKEN_EXPIRED" }
 
+  + Headers
+
+    WWW-Authenticate: Bearer realm="api.depay.com", error="invalid_token"
+
+  + Body
+
+    {
+      "error": "invalid_token",
+      "error_description": "The refresh token is invalid, expired, or has already been used.",
+      "error_uri": "https://depay.com/docs/apps/user-authorization#refresh-an-access-token"
+    }
 ```
 
-In order to refresh the `access_token`, prepare a `refresh_challenge` as a BASE64URL-safe-encoded SHA-256 hash of your stored `refresh_token` + `app_secret` (string concatenation).
+Refresh the `access_token` server-side:
 
 ```apib
-### POST https://api.depay.com/apps/access_token/refresh
-
-Retrieves latest access_token.
+### POST https://api.depay.com/oauth/token
 
 + Request (application/json)
-  
-  POST https://api.depay.com/apps/access_token/refresh
 
-  + Body
-  
-    {
-      "app_id": "<YOUR APP ID>",
-      "access_token": "<YOUR STORED ACCESS TOKEN>",
-      "refresh_challenge": "<YOUR PREPARED CHALLENGE>",
-      "refresh_token": "<YOUR STORED REFRESH TOKEN>"
-    }
+  {
+    "grant_type":    "refresh_token",
+    "client_id":     "<YOUR_APP_ID>",
+    "client_secret": "<YOUR_APP_SECRET>",
+    "refresh_token": "<STORED_REFRESH_TOKEN>"
+  }
 
 + Response 200 (application/json)
-  
+
+  {
+    "access_token":  "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9…",
+    "token_type":    "Bearer",
+    "expires_in":    3600,
+    "expires_at":    "2022-11-10T14:30:00.436Z",
+    "refresh_token": "ghi703d2b…",
+    "scope":         "payments.read integrations.read"
+  }
+```
+
+:::info
+A given `refresh_token` can be exchanged only once. If you try to reuse it you’ll get an invalid_grant/invalid_token error and must re-authorize the user.
+:::
+
+:::info
+Refresh storage of `access_token`, `refresh_token` and store its expiry (`expires_at`).
+:::
+
+### Re-authorization Required
+
+If at any point your access or refresh token is invalid, expired, or revoked, your app must prompt the user to re-authorize. Below are common responses that indicate a full re-authorization is needed.
+
+#### Invalid or Expired Refresh Token
+
+When you attempt to refresh with an invalid or one-time-use refresh token:
+
+```apib
++ Response 400 (application/json)
+
   + Body
-  
+
     {
-      "access_token": "332407c4-368a-42bc-bfd6-e6f5ca96d893",
-      "refresh_token": "123e5f13-406e-4c6a-ab21-c7e01d168f97",
-      "expires_at": "2022-11-10T14:30:00.436Z"
+      "error": "invalid_grant",
+      "error_description": "The refresh token is invalid, expired, or has already been used."
     }
 ```
 
-This can only be done once for a single `refresh_token`.
+#### Invalid or Expired Access Token
 
-You will need to restart the authorization flow if a `refresh_token` has been invalidated and you didn't manage to persist the next `refresh_token`.
+If you use an access token that the server no longer recognizes:
+
+```apib
++ Response 401 (application/json)
+
+  + Headers
+
+    WWW-Authenticate: Bearer realm="api.depay.com", error="invalid_token"
+
+  + Body
+
+    {
+      "error": "invalid_token",
+      "error_description": "The access token is invalid or has expired."
+    }
+```
+
+#### Insufficient Scope
+
+If your access token lacks the required permissions for an endpoint:
+
+```apib
++ Response 403 (application/json)
+
+  + Headers
+
+    WWW-Authenticate: Bearer realm="api.depay.com", error="insufficient_scope"
+
+  + Body
+
+    {
+      "error": "insufficient_scope",
+      "error_description": "The access token does not have the required scope: payments.read"
+    }
+```
+
+### Testing Integration
+
+Because DePay enforces exact, pre-registered redirect URIs, you should create a separate app configuration for each environment (e.g. development, staging, production). 
+
+This ensures your redirect URIs match exactly and prevents authorization failures.
