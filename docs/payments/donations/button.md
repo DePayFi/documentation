@@ -471,7 +471,7 @@ After setting up an endpoint and registering a public key with the integration, 
 
 #### Incoming requests
 
-Incoming requests will have the following headers:
+Incoming requests will be performed as `POST` request and have the following headers:
 
 ```
 Accept: application/json,application/vnd.api+json
