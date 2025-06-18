@@ -85,7 +85,7 @@ To prevent open‐redirect attacks, all users will be redirected to the pre‐re
 
 ### Handle the Redirect
 
-After the user approves or denies, DePay will redirect to your redirect_uri with:
+After the user approves or denies, DePay will redirect to your (on app.depay.com) pre-configured redirect url with:
 
 - `code` — the authorization code (on success)
 
@@ -105,10 +105,10 @@ Server-side must:
 
 - Retrieve the original `code_verifier` for this attempt.
 
-### Exchange Authorization Code for Tokens
+### Exchange Authorization Code for Access Token
 
 :::warning
-Ensure all token exchanges occur via your backend directly to DePay APIs only.”
+Ensure all token exchanges occur via your backend directly to DePay APIs only.
 :::
 
 From your server back-end only, make a POST to the token endpoint:
