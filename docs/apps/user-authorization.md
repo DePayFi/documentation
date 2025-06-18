@@ -123,7 +123,6 @@ From your server back-end only, make a `POST` request to the `oauth/token` endpo
     "client_id":     "<YOUR_APP_ID>",
     "client_secret": "<YOUR_APP_SECRET>",
     "code":          "<AUTHORIZATION_CODE>",
-    "redirect_uri":  "<YOUR_REDIRECT_URI>",
     "code_verifier": "<ORIGINAL_CODE_VERIFIER>"
   }
 
