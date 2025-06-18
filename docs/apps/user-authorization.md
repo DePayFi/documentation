@@ -8,7 +8,7 @@ sidebar_label: User Authorization
 Receive authorization from users by asking for the required permissions.
 
 :::info
-This is a fully compliant OAuth 2.0 Authorization Code flow implementation with PKCE.
+This is a OAuth 2.0 compliant Authorization Code flow implementation with PKCE.
 :::
 
 ![App User Authorization](/img/apps/app-user-authorization.jpg)
