@@ -111,7 +111,7 @@ Server-side must:
 Ensure all token exchanges occur via your backend directly to DePay APIs only.
 :::
 
-From your server back-end only, make a POST to the token endpoint:
+From your server back-end only, make a `POST` request to the `oauth/token` endpoint:
 
 ```apib
 ### POST https://api.depay.com/oauth/token
