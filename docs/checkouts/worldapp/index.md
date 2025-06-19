@@ -30,7 +30,7 @@ Select at least one World Chain token in your DePay payment configuration:
 
 ![Select Token](/img/checkouts/worldapp/select-token.jpg)
 
-:::warning
+:::caution
 If you don’t add at least one World Chain token as an accepted payment method in you DePay configuration, payments in your Shop on World App won’t work.
 :::
 
