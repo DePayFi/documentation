@@ -200,7 +200,7 @@ A given `refresh_token` can be exchanged only once. If you try to reuse it youâ€
 :::
 
 :::info
-Refresh storage of `access_token`, `refresh_token` and store its expiry (`expires_at`).
+Update your storage of `access_token`, `refresh_token` and store its expiry (`expires_at`).
 :::
 
 ### Re-authorization Required
