@@ -5,13 +5,13 @@ sidebar_label: Checkouts
 
 # Checkouts
 
-Access user's checkouts.
+Access other accounts checkout data as an app.
 
 ## Shopify
 
 Allows apps to access users' Shopify checkouts and check which shops are connected to the DePay account.
 
-Requires [`checkouts.shopify.read`](/docs/apps/user-authorization#checkoutsshopifyread) permission.
+Requires [`checkouts.shopify.read`](/docs/apps/permissions) permission.
 
 
 ```apib

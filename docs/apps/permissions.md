@@ -5,7 +5,7 @@ sidebar_label: Permissions
 
 # Permissions
 
-Overview of all available app permissions and what ther permit
+Overview of all available app permissions and what they permit
 
 | Permission               | Description                                                                         |  
 | -                        | -                                                                                   |  

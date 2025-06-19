@@ -5,13 +5,13 @@ sidebar_label: Payments
 
 # Payments
 
-Access user's payment data.
+Access other accounts payment data as an app.
 
 ## Shopify Payments
 
 Allows apps to access users' Shopify payments with a Shopify payment `id`.
 
-Requires [`payments.shopify.read`](/docs/apps/user-authorization#paymentsread) permission authorized from the user's account.
+Requires [`payments.shopify.read`](/docs/apps/permissions) permission authorized from the user's account.
 
 :::info
 Only succeded payments are returned via this endpoint.

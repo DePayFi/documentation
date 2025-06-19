@@ -22,11 +22,11 @@ x-api-key: Th1406MN7L796p9fM8lHTa79jrtNorXW2duHYZkY
 
 ## Access Token
 
-Make sure you have the [User Authorization Flow](/docs/apps/user-authorization) implemented and your app is able to [retrieve and refresh access tokens](/docs/apps/user-authorization#retrieve-access-token).
+Make sure you have the [Authorization Flow](/docs/apps/authorization) implemented and your app is able to [retrieve and refresh access tokens](/docs/apps/authorization#retrieve-access-token).
 
 ## Authorization Header
 
-In order to make requests as an app retrieving user data you need to pass the `access_token` via the `Authorization` header with a `Bearer` prefix:
+In order to make requests as an app retrieving other accounts' data you need to pass the `access_token` via the `Authorization` header with a `Bearer` prefix:
 
 ```
 Authorization: Bearer {access_token}

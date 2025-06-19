@@ -1,17 +1,17 @@
 ---
 sidebar_position: 2
-sidebar_label: User Authorization
+sidebar_label: Authorization
 ---
 
-# User Authorization
+# Authorization
 
-Receive authorization from users by asking for the required permissions.
+Receive authorization by asking for the required permissions.
 
 :::info
 This is a OAuth 2.0 compliant Authorization Code flow implementation with PKCE.
 :::
 
-![App User Authorization](/img/apps/app-user-authorization.jpg)
+![App Authorization](/img/apps/app-user-authorization.jpg)
 
 ## Step by step
 
@@ -162,7 +162,7 @@ When your stored `access_token` expires or you receive a response with status co
     {
       "error": "invalid_token",
       "error_description": "The refresh token is invalid, expired, or has already been used.",
-      "error_uri": "https://depay.com/docs/apps/user-authorization#refresh-an-access-token"
+      "error_uri": "https://depay.com/docs/apps/authorization#refresh-an-access-token"
     }
 ```
 
