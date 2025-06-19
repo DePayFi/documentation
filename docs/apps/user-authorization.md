@@ -79,7 +79,7 @@ GET https://app.depay.com/authorize
   &state=${state}
 ```
 
-:::warning
+:::caution
 To prevent open‐redirect attacks, all users will be redirected to the pre‐registered redirect URI configured in your app dashboard on app.depay.com.
 :::
 
