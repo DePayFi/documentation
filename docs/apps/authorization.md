@@ -166,7 +166,6 @@ When your stored `access_token` expires or you receive a response with status co
     {
       "error": "invalid_token",
       "error_description": "The refresh token is invalid, expired, or has already been used.",
-      "error_uri": "https://depay.com/docs/apps/authorization#refresh-an-access-token"
     }
 ```
 
