@@ -11,6 +11,10 @@ Receive authorization by asking for the required permissions.
 This is a OAuth 2.0 compliant Authorization Code flow implementation with PKCE.
 :::
 
+:::info
+Implement this authentication and authorization flow by leveraging widely-available OAuth 2.0 client libraries (e.g., OAuthLib for Python, Spring Security OAuth for Java, or MSAL for .NET).
+:::
+
 ![App Authorization](/img/apps/app-user-authorization.jpg)
 
 ## Step by step
