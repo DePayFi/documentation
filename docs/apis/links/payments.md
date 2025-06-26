@@ -16,7 +16,7 @@ For efficient payment status synchronization, it's advised against using API end
 ## GET
 
 ```
-GET https://api.depay.com/v2/links/:link_id/payments
+GET https://api.depay.com/links/:link_id/payments
 ```
 
 ### Required Parameters
@@ -30,7 +30,7 @@ GET https://api.depay.com/v2/links/:link_id/payments
 ### Example Request
 
 ```
-GET https://api.depay.com/v2/links/4cZQFsap1QbLIlnVC5hscB/payments
+GET https://api.depay.com/links/4cZQFsap1QbLIlnVC5hscB/payments
 ```
 
 ### Example Response
@@ -57,5 +57,5 @@ GET https://api.depay.com/v2/links/4cZQFsap1QbLIlnVC5hscB/payments
 This endpoint has a limit of 10 payments that are responded per request. Use `after` of the last received payment per response to paginate through the result set:
 
 ```
-GET https://api.depay.com/v2/links/4cZQFsap1QbLIlnVC5hscB/payments?after=2023-04-21T15:52:34.937960Z
+GET https://api.depay.com/links/4cZQFsap1QbLIlnVC5hscB/payments?after=2023-04-21T15:52:34.937960Z
 ```

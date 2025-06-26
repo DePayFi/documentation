@@ -1,0 +1,19 @@
+---
+sidebar_position: 3
+---
+
+# Versioning
+
+## Version Header
+
+API versions are specified using the `x-api-version` header.
+
+Ensure that this header is set to the version of the API you are implementing at all times:
+
+```
+x-api-version: v2
+```
+
+## History and Changelog
+
+`v2`: Latest version. No breaking changes.

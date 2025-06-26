@@ -1,5 +1,5 @@
 ---
-sidebar_position: 4
+sidebar_position: 6
 sidebar_label: Shopify
 ---
 
@@ -16,7 +16,7 @@ Only succeded payments are returned via this endpoint.
 :::
 
 ```apib
-### GET https://api.depay.com/v2/payments/shopify/{id}
+### GET https://api.depay.com/payments/shopify/{id}
 
 + Attributes
   
@@ -24,7 +24,7 @@ Only succeded payments are returned via this endpoint.
 
 + Request (application/json)
   
-  GET https://api.depay.com/v2/payments/shopify/r0jveQYVIoqGGcXM7JjAap1u4
+  GET https://api.depay.com/payments/shopify/r0jveQYVIoqGGcXM7JjAap1u4
 
   + Headers
 
