@@ -134,7 +134,7 @@ For all other token addresses, visit: https://worldscan.org/tokens
 
 ### Contract Entrypoints
 
-Set DePay's smart contracts as entrypoints: `0xC9850b32475f4fdE5c972EA6f967982a3c435D10,0x886eb82a7e5E7310F66A0E83748662A17E391eb0`:
+Set DePay's smart contracts as entrypoints: `0x886eb82a7e5E7310F66A0E83748662A17E391eb0`:
 
 ![Contract Entrypoints](/img/checkouts/worldapp/contract-entrypoints.jpg)
 
