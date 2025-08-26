@@ -127,25 +127,25 @@ A payment transaction on Solana costs users approx. **below $0.01** in average.
 
 ## World Chain
 
-Payments on World Chain typically take **3 seconds** in average to process and validate.
+Payments on World Chain typically take **1 second** in average to process and validate.
 
 A payment transaction on Gnosis costs users approx. **below $0.01** in average.
 
 ## Base
 
-Payments on Optimism typically take **3 seconds** in average to process and validate.
+Payments on Optimism typically take **1 second** in average to process and validate.
 
 A payment transaction on Base costs users approx. **below $0.01** in average.
 
 ## Optimism
 
-Payments on Optimism typically take **3 seconds** in average to process and validate.
+Payments on Optimism typically take **2 seconds** in average to process and validate.
 
 A payment transaction on Optimism costs users approx. **below $0.01** in average.
 
 ## Arbitrum
 
-Payments on Arbitrum typically take **1 second** in average to process and validate.
+Payments on Arbitrum typically take **2 seconds** in average to process and validate.
 
 A payment transaction on Arbitrum costs users approx. **below $0.01** in average.
 
@@ -157,7 +157,7 @@ A payment transaction on Gnosis costs users approx. **below $0.01** in average.
 
 ## Polygon
 
-Payments on Polygon typically take **5 seconds** in average to process and validate.
+Payments on Polygon typically take **3 seconds** in average to process and validate.
 
 A payment transaction on Polygon costs users approx. **below $0.01** in average.
 
@@ -171,10 +171,10 @@ A payment transaction on Avalanche costs users approx. **below $0.01** in averag
 
 Payments on BNB Smart Chain typically take **5 seconds** in average to process and validate.
 
-A payment transaction on BNB Smart Chain costs users approx. between **$0.05-$0.50** in average.
+A payment transaction on BNB Smart Chain costs users approx. between **$0.01-$0.05** in average.
 
 ## Ethereum
 
-Payments on Ethereum typically take **18 seconds** in average to process and validate.
+Payments on Ethereum typically take **10 seconds** in average to process and validate.
 
-A payment transaction on Ethereum costs users approx. between **$0.10-$10** in average.
+A payment transaction on Ethereum costs users approx. between **$0.10-$1** in average.
