@@ -198,7 +198,32 @@ DePayWidgets.Payment({
 });
 ```
 
-## Redirect after payment
+## Controlling the user flow
+
+DePay widget integrations allow you to control user flows in different ways:
+
+1. **Static redirect**  
+   Redirect all users to the same static URL after a payment is completed.  
+   Example: https://my-website.com/payments/success
+
+For static redirects, see [static redirects](#static-redirect-after-payment).
+
+2. **Dynamic redirect**  
+Redirect each user to a personalized, dynamic URL.  
+Example:  https://my-website.com/payments/<PAYMENT_ID>/success
+
+You can define the dynamic redirect URL in two ways:
+
+- **Before payment**: Set the URL during the [dynamic configuration request](#dynamic-user-flowredirect).
+- **After payment**: Set the URL when handling the [payment callback](#redirect-user).
+
+:::info
+
+The latter (after payment) will override the former (before payment) if both are provided.
+
+:::
+
+## Static redirect after payment
 
 Enter the URL to which users should be redirected after a successful payment.
 
