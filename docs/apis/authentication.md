@@ -21,7 +21,3 @@ If you want to use DePay's APIs, you need to issue your own API key.
 Go to **[DePay App](https://app.depay.com)** > **API** > **Issue Api Key**.
 
 You will need to have an active DePay PRO subscription in order to issue and maintain an active API key.
-
-## Limitations
-
-Every API Key is limited to max. 10 requests/second (10 requests burst) and 14'400 requests/day.
