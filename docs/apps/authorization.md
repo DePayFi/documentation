@@ -177,6 +177,9 @@ Refresh the `access_token` server-side:
 ```apib
 ### POST https://api.depay.com/oauth/token
 
++ Headers
+  x-api-key: <your_api_key_here>
+
 + Request (application/json)
 
   {
