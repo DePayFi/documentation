@@ -33,16 +33,16 @@ Explore DePay's Web3 APIs.
 
 The following resources are available via DePay's APIs:
 
-<div><strong><a href="/docs/apis/links">Links</a></strong></div>
+<div><strong><a href="/docs/apis/resources/links">Links</a></strong></div>
 <div className="ps-2">
-  <a className="pt-1 d-block" href="/docs/apis/links/payments">→ Payments</a>
+  <a className="pt-1 d-block" href="/docs/apis/resources/links/payments">→ Payments</a>
 </div>
 
 <br/>
 
-<div><strong><a href="/docs/apis/shopify">Shopify</a></strong></div>
+<div><strong><a href="/docs/apis/resources/shopify">Shopify</a></strong></div>
 <div className="ps-2">
-  <a className="pt-1 d-block" href="/docs/apis/shopify">→ Payments</a>
+  <a className="pt-1 d-block" href="/docs/apis/resources/shopify">→ Payments</a>
 </div>
 
 
