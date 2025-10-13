@@ -10,6 +10,17 @@ Enable your application to securely access DePay user data and act on behalf of 
 ![DePay Apps](/img/apps/apps.svg)
 
 <div className="row pt-3">
+  
+  <div className="col-12 ps-0 pe-0 col-md-4 pe-md-4">
+    <a href="/docs/apps/authorization" className="d-block hover-card p-3">
+      <span className="d-block">
+        <FontAwesomeIcon icon="fa-solid fa-key" className="text-body-color h2 pt-2" />
+      </span>
+      <h4 className="d-block h5 mb-1">Authentication</h4>
+      <div><small className="text-light">DePay's API requires a key and an Authorization-Header for authentication.</small></div>
+    </a>
+  </div>
+
   <div className="col-12 ps-0 pe-0 col-md-4 pe-md-4">
     <a href="/docs/apps/authorization" className="d-block hover-card p-3">
       <span className="d-block">

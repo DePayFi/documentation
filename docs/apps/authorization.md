@@ -1,5 +1,5 @@
 ---
-sidebar_position: 2
+sidebar_position: 3
 sidebar_label: Authorization
 ---
 
@@ -119,6 +119,9 @@ From your server back-end only, make a `POST` request to the `oauth/token` endpo
 
 ```apib
 ### POST https://api.depay.com/oauth/token
+
++ Headers
+  x-api-key: <your_api_key_here>
 
 + Request (application/json)
 
