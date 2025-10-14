@@ -11,7 +11,7 @@ Access other accounts checkout data as an app.
 
 Allows apps to access users' Shopify checkouts and check which shops are connected to the DePay account.
 
-Requires [`checkouts.shopify.read`](/docs/apps/permissions) permission.
+Requires [`checkouts.shopify.read`](/docs/apps/authorization/permissions) permission.
 
 
 ```apib

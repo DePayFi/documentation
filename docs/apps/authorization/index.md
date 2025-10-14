@@ -49,7 +49,7 @@ Right after creating your app or after navigating your app on [app.depay.com](ht
 
 Now select the permissions your app requires.
 
-See: [List of all app permissions and their detailed descriptions](/docs/apps/permissions).
+See: [List of all app permissions and their detailed descriptions](/docs/apps/authorization/permissions).
 
 ### Redirect URL
 
