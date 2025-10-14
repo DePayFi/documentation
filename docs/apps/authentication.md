@@ -6,7 +6,7 @@ sidebar_position: 3
 
 Authenticate as an App towards DePay's APIs.
 
-To authenticate towards DePay's APIs as an App you need an [API Key](/docs/apis/authentication) and a valid [Access Token](#access-token).
+To authenticate towards DePay's APIs as an App you need an API Key and a valid [Access Token](#access-token).
 
 ## API Key
 
