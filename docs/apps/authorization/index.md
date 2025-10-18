@@ -141,7 +141,7 @@ From your server back-end only, make a `POST` request to the `oauth/token` endpo
     "expires_in":    3600,
     "expires_at":    "2022-11-10T14:30:00.436Z",
     "refresh_token": "def50200a45f…",
-    "scope":         "payments.read integrations.read"
+    "scope":         "payments.read"
   }
 ```
 
@@ -197,7 +197,7 @@ Refresh the `access_token` server-side:
     "expires_in":    3600,
     "expires_at":    "2022-11-10T14:30:00.436Z",
     "refresh_token": "ghi703d2b…",
-    "scope":         "payments.read integrations.read"
+    "scope":         "payments.read"
   }
 ```
 
