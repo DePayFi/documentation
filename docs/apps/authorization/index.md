@@ -12,7 +12,7 @@ This is a OAuth 2.0 compliant Authorization Code flow implementation with PKCE.
 :::
 
 :::info
-Implement this authentication and authorization flow by leveraging widely-available OAuth 2.0 client libraries (e.g., OAuthLib for Python, Spring Security OAuth for Java, or MSAL for .NET).
+Implement this authentication and authorization flow by leveraging widely-available OAuth 2.0 client libraries (e.g., oauth2 gem for Ruby, openid-client for Node.js, OAuthLib for Python, Spring Security OAuth for Java, or MSAL for .NET).
 :::
 
 ![App Authorization](/img/apps/app-user-authorization.jpg)
