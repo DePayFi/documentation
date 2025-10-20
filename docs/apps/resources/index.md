@@ -1,9 +1,9 @@
 ---
 sidebar_position: 6
-sidebar_label: API Resources
+sidebar_label: Resources
 ---
 
-# App API Resources
+# App Resources
 
 Explore all resources available to DePay Apps via APIs.
 

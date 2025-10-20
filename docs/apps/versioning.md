@@ -1,9 +1,9 @@
 ---
 sidebar_position: 2
-sidebar_label: API Versioning
+sidebar_label: Versioning
 ---
 
-# API Versioning
+# Versioning
 
 ## Version Header
 

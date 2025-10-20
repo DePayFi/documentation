@@ -122,6 +122,7 @@ From your server back-end only, make a `POST` request to the `oauth/token` endpo
 
 + Headers
   x-api-key: <your_api_key_here>
+  x-api-version: 2025-10
 
 + Request (application/json)
 
@@ -179,6 +180,7 @@ Refresh the `access_token` server-side:
 
 + Headers
   x-api-key: <your_api_key_here>
+  x-api-version: 2025-10
 
 + Request (application/json)
 
