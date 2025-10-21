@@ -5,7 +5,7 @@ sidebar_label: Payments
 
 # Link Payments
 
-Accesses payments received with payment links via API
+Accesses payments received with payment links.
 
 :::info
 
