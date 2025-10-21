@@ -31,6 +31,7 @@ Only succeded payments are returned via this endpoint.
   + Headers
 
     x-api-key: {api_key}
+    x-api-version: 2025-10
     Authorization: Bearer {access_token}
 
 + Response 200 (application/json)
