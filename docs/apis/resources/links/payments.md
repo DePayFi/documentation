@@ -38,16 +38,18 @@ GET https://api.depay.com/links/4cZQFsap1QbLIlnVC5hscB/payments
 ```javascript
 [
   {
-    "status": "success",
-    "failed_reason": null,
     "blockchain": "ethereum",
-    "transaction": "0x289fb6a1bb311b58025347e69e28acc6e486ace08b11a26912659f01fce12d62",
-    "sender": "0x98baab7e67d65973d8958b53f4e825455aaa2a10",
-    "receiver": "0x66911F870bD34c7a3967473B84d8C88e85e3F901",
-    "token": "0xdAC17F958D2ee523a2206206994597C13D831ec7",
-    "amount": "1039",
-    "payload": "{}",
-    "confirmed_at": "2023-04-21T15:52:34.937960Z",
+    "transaction": "0xe25ec56d630b2a626a32258b3c90a0ce8cd494e5",
+    "sender": "0xcea76a7b223f268cc727fb3a2a93491817cee51a",
+    "receiver": "0x830807e11ee2ee50538302607f5f656d8449855d",
+    "token": "0xd4e86ba0bab749c275f8423b84d59d5383d7591e",
+    "amount": "930.26",
+    "payload": nil,
+    "after_block": "13542983",
+    "commitment": "confirmed",
+    "confirmations": 1,
+    "created_at": "2022-11-05T09:05:27.359792Z",
+    "confirmed_at": "2022-11-05T09:06:28.421791Z"
   }
 ]
 ```
