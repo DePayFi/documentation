@@ -286,6 +286,30 @@ If you want to dynamically redirect users upon callback response, provide the lo
 }
 ```
 
+### Sent token information
+
+By default, the callback only includes information about the token that your integration **receives** as part of the payment.
+
+If you also want to receive details about the token that was originally **sent by the payer**, you must enable this feature manually.
+
+
+1. Navigate to **Integration → Edit**
+2. Set a valid **Callback URL**
+3. Activate the checkbox **"Include sent token information"**
+
+> The option becomes available only after a callback URL has been configured.
+
+Once enabled, the callback payload will include two additional fields:
+
+```json
+{
+  // ...
+  "sent_token": "0xa0bEd124a09ac2Bd941b10349d8d224fe3c955eb",
+  "sent_amount": "20.11"
+}
+```
+
+
 ## Configure events
 
 If you want your systems to be informed about the different events occuring during the [payment flow](#payment-flow),
