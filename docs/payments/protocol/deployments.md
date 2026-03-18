@@ -42,6 +42,10 @@ sidebar_position: 1
 
 [0x886eb82a7e5E7310F66A0E83748662A17E391eb0](https://worldscan.org/address/0x886eb82a7e5E7310F66A0E83748662A17E391eb0)<br/>
 
+###### Celo
+
+TODO: Deploy contracts on Celo
+
 ### Solana
 
 [DePayR1gQfDmViCPKctnZXNtUgqRwnEqMax8LX9ho1Zg](https://solscan.io/account/DePayR1gQfDmViCPKctnZXNtUgqRwnEqMax8LX9ho1Zg)<br/>

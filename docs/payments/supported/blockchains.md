@@ -31,6 +31,17 @@ The following blockchains are currently supported by DePay.
   </div>
 
   <div className="col-12 col-md-6">
+    <a href="#celo" className="d-flex hover-card p-3 align-items-center">
+      <div className="text-center position-relative pe-2" style={{width: "2.3rem"}}>
+        <img style={{ width: '1.8rem', height: '1.8rem', position: 'relative', top: '0.1rem' }} src="/docs/img/blockchains/Celo.svg"/>
+      </div>
+      <div className="ps-3 pt-1">
+        <div className="text-light"><strong>Celo</strong></div>
+      </div>
+    </a>
+  </div>
+
+  <div className="col-12 col-md-6">
     <a href="#gnosis" className="d-flex hover-card p-3 align-items-center">
       <div className="text-center position-relative pe-2" style={{width: "2.3rem"}}>
         <img style={{ width: '1.8rem', height: '1.8rem', position: 'relative', top: '0.1rem' }} src="/docs/img/blockchains/Gnosis.svg"/>
@@ -172,6 +183,14 @@ A payment transaction on Avalanche costs users approx. **below $0.01** in averag
 Payments on BNB Smart Chain typically take **5 seconds** in average to process and validate.
 
 A payment transaction on BNB Smart Chain costs users approx. between **$0.01-$0.05** in average.
+
+## Celo
+
+Celo is an EVM-compatible blockchain focused on mobile-first DeFi.
+
+Payments on Celo typically take **5 seconds** in average to process and validate.
+
+A payment transaction on Celo costs users approx. **below $0.01** in average.
 
 ## Ethereum
 
