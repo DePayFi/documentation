@@ -38,3 +38,4 @@ Different blockchains have varying benchmarks for what constitutes a "finalized"
 | Optimism   | 100    | 40s     |
 | Base       | 100    | 40s     |
 | Worldchain | 100    | 40s     |
+| Celo       | 1      | 5s      |

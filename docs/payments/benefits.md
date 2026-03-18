@@ -26,7 +26,7 @@ It intelligently recommends the most **cost-efficient** and effective payment op
 
 ## Instant Multi-Blockchain Support
 
-Integrating DePay empowers your project to effortlessly support crypto payments across **10 blockchains**, **hundreds of wallets**, and **thousands of tokens** from day one.
+Integrating DePay empowers your project to effortlessly support crypto payments across **11 blockchains**, **hundreds of wallets**, and **thousands of tokens** from day one.
 
 Expand your user base and market reach instantly without additional integration effort.
 
